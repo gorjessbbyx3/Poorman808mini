@@ -1,0 +1,184 @@
+1. POST /v2/create_task
+Customer booking form creates tow jobs
+
+{
+  "customer_name": "John Smith",
+  "customer_phone": "(808) 555-1234",
+  "customer_email": "john@example.com",
+  "vehicle_details": "2022 Toyota Camry (Silver)",
+  "service_type": "tow",
+  "priority": "normal",
+  "pickup_location": "123 Ala Moana Blvd, Honolulu, HI",
+  "pickup_lat": 21.2945,
+  "pickup_lng": -157.8570,
+  "dropoff_location": "456 King St, Honolulu, HI",
+  "dropoff_lat": 21.3070,
+  "dropoff_lng": -157.8520,
+  "notes": "Car won't start, needs flatbed",
+  "estimated_cost": 150.00
+}
+Response:
+
+{
+  "success": true,
+  "task_id": "uuid-here",
+  "job_number": "JOB-ABC123",
+  "status_code": "0",
+  "message": "Booking created successfully"
+}
+2. POST /v2/get_job_details
+Tracker page gets job status + driver info
+
+{
+  "task_id": "uuid-of-job"
+}
+OR
+
+{
+  "job_number": "JOB-ABC123"
+}
+Response:
+
+{
+  "success": true,
+  "task": {
+    "task_id": "uuid",
+    "job_number": "JOB-ABC123",
+    "status": "en_route",
+    "status_code": "2",
+    "customer_name": "John Smith",
+    "vehicle_details": "2022 Toyota Camry (Silver)",
+    "pickup_location": "123 Ala Moana Blvd",
+    "created_at": "2025-12-22T10:30:00Z"
+  },
+  "agent": {
+    "agent_id": "driver-uuid",
+    "name": "Mike Thompson",
+    "phone": "(808) 555-1001",
+    "truck_number": "Flatbed #4",
+    "current_lat": "21.3069",
+    "current_lng": "-157.8583",
+    "last_location_update": "2025-12-22T10:35:00Z"
+  }
+}
+3. POST /v2/get_all_tasks
+Dispatch dashboard lists all jobs
+
+{
+  "status": "0",
+  "page": 1,
+  "limit": 50
+}
+Note: status is optional. Use CRM codes: 0=pending, 1=assigned, 2=en_route, 4=completed, 6=cancelled, 9=on_hold
+
+4. POST /v2/edit_task
+Change job status
+
+{
+  "task_id": "uuid-of-job",
+  "status_code": 2,
+  "notes": "Driver en route, ETA 15 minutes",
+  "final_cost": 175.00
+}
+Status codes:
+
+0 = pending
+1 = assigned
+2 = en_route
+4 = completed
+6 = cancelled
+9 = on_hold
+5. POST /v2/get_agent_location
+Live driver GPS for map tracking
+
+{
+  "agent_id": "driver-uuid"
+}
+OR
+
+{
+  "task_id": "job-uuid"
+}
+Response:
+
+{
+  "success": true,
+  "agent": {
+    "agent_id": "driver-uuid",
+    "name": "Mike Thompson",
+    "truck_number": "Flatbed #4",
+    "status": "busy",
+    "current_lat": "21.3069",
+    "current_lng": "-157.8583",
+    "last_update": "2025-12-22T10:35:00Z"
+  }
+}
+6. POST /v2/assign_agent
+Dispatch assigns driver to job
+
+{
+  "task_id": "job-uuid",
+  "agent_id": "driver-uuid"
+}
+7. POST /v2/delete_task
+Cancel or delete jobs
+
+{
+  "task_id": "job-uuid",
+  "hard_delete": false
+}
+Set hard_delete: true to permanently remove, or false to just mark as cancelled (status_code 6)
+
+8. POST /v2/membership_inquiry
+Handle membership signup/inquiry from website
+
+{
+  "customer_name": "Jane Doe",
+  "customer_phone": "(808) 555-5678",
+  "customer_email": "jane@example.com",
+  "plan_id": "plan-uuid",
+  "inquiry_type": "signup",
+  "vehicles": [
+    {
+      "year": "2023",
+      "make": "Honda",
+      "model": "Accord",
+      "color": "Blue",
+      "license_plate": "ABC-1234",
+      "vin": "1HGBH41JXMN109186"
+    }
+  ],
+  "notes": "Interested in Ohana plan"
+}
+Use inquiry_type: "inquiry" for just questions, or "signup" to create a subscription
+
+9. POST /v2/get_fleet
+Get all drivers/trucks for tracking display
+
+{}
+Empty body - returns all drivers
+
+Response:
+
+{
+  "success": true,
+  "total": 3,
+  "fleet": [
+    {
+      "agent_id": "uuid",
+      "name": "Mike Thompson",
+      "phone": "(808) 555-1001",
+      "truck_number": "Flatbed #4",
+      "truck_type": "flatbed",
+      "status": "available",
+      "current_lat": "21.3069",
+      "current_lng": "-157.8583",
+      "last_update": "2025-12-22T10:35:00Z"
+    }
+  ]
+}
+Example cURL Request
+curl -X POST https://your-app.replit.app/v2/create_task \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: e02b2bb8cd087a1fb83e134b1b0ecd1c8a1c37a6ca4cedb5de011c6cfd8e955f" \
+  -d '{"customer_name": "John Smith", "customer_phone": "(808) 555-1234", "vehicle_details": "2022 Toyota Camry", "pickup_location": "123 Main St"}'

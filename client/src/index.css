@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(220 15% 15%);
+  
+  --color-card: hsl(220 15% 97%);
+  --color-card-foreground: hsl(220 15% 15%);
+  
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(220 15% 15%);
+  
+  --color-primary: hsl(25 95% 53%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  
+  --color-secondary: hsl(220 15% 95%);
+  --color-secondary-foreground: hsl(220 15% 15%);
+  
+  --color-muted: hsl(220 15% 95%);
+  --color-muted-foreground: hsl(220 10% 45%);
+  
+  --color-accent: hsl(25 95% 53%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  
+  --color-destructive: hsl(0 62.8% 50%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  
+  --color-border: hsl(220 15% 90%);
+  --color-input: hsl(220 15% 90%);
+  --color-ring: hsl(25 95% 53%);
+  
+  --radius: 0.5rem;
+  
+  --font-sans: 'Inter', 'Manrope', sans-serif;
+  --font-display: 'Teko', sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-wide;
+  }
+}
+
+@layer utilities {
+  .clip-path-slant {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+  }
+}
