@@ -142,35 +142,41 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman808 Roadside" className="h-20 w-auto mb-8" data-testid="img-logo" />
+              <img src={logo} alt="Poorman808 Roadside - 24/7 Towing Service in Ewa Beach Hawaii" className="h-20 w-auto mb-6" data-testid="img-logo" />
               
-              <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight" data-testid="text-hero-title">
-                STUCK ON THE ROAD?<br />
-                <span className="text-primary">WE GOT YOU.</span>
+              <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
+                <span className="w-2 h-2 bg-white rounded-full" />
+                <span className="font-bold text-sm uppercase tracking-wide">Emergency Towing Available Now</span>
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-4 leading-tight" data-testid="text-hero-title">
+                24/7 Towing & Roadside Assistance<br />
+                <span className="text-primary">in ʻEwa Beach & West Oʻahu</span>
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 max-w-lg" data-testid="text-hero-subtitle">
-                Fast, reliable, and affordable roadside assistance serving ʻEwa Beach, Kapolei, Waipahu, Pearl City, and all of West Oʻahu. Locally owned and operated with true Aloha spirit.
+              <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg" data-testid="text-hero-subtitle">
+                <strong>Emergency towing, jump starts, lockouts, tire changes, fuel delivery & winch-outs</strong> serving ʻEwa Beach, Kapolei, Waipahu, Pearl City, Honolulu and all of Oʻahu. Fast response. Fair prices. True Aloha.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white h-16 px-10 text-2xl font-display uppercase">
+              <div className="flex flex-col gap-3 mb-8">
+                <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white h-16 px-10 text-2xl font-display uppercase shadow-lg shadow-primary/30">
                   <a href="tel:8088920158" data-testid="button-call-hero">
                     <Phone className="w-6 h-6 mr-3" />
-                    (808) 892-0158
+                    CALL NOW: (808) 892-0158
                   </a>
                 </Button>
+                <p className="text-gray-400 text-sm text-center sm:text-left">Avg. response time: 15-30 minutes in West Oʻahu</p>
               </div>
 
               {/* Feature Pills */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3">
                 {[
-                  { icon: Clock, text: "24/7 Service" },
-                  { icon: MapPin, text: "All Oʻahu" },
+                  { icon: Clock, text: "24/7 Emergency Service" },
+                  { icon: MapPin, text: "ʻEwa Beach • Kapolei • Pearl City" },
                   { icon: ShieldCheck, text: "Licensed & Insured" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
-                    <item.icon className="w-5 h-5 text-primary" />
+                  <div key={i} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm">
+                    <item.icon className="w-4 h-4 text-primary" />
                     <span className="font-medium">{item.text}</span>
                   </div>
                 ))}
@@ -184,8 +190,8 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-2xl p-8 shadow-2xl"
             >
-              <h2 className="text-3xl font-display font-bold text-gray-900 mb-2" data-testid="text-form-title">Get In Touch</h2>
-              <p className="text-gray-600 mb-6">Need help? Fill out this form and we'll call you right back.</p>
+              <h2 className="text-3xl font-display font-bold text-gray-900 mb-2" data-testid="text-form-title">Need Emergency Help?</h2>
+              <p className="text-gray-600 mb-6">Stranded in ʻEwa Beach or West Oʻahu? Fill out this form and we'll call you back in minutes.</p>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
