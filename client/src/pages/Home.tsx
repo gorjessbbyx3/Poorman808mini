@@ -383,6 +383,32 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900" data-testid="text-reviews-title">
               WHAT OUR CLIENTS SAY
             </h2>
+            <div className="flex flex-wrap justify-center gap-6 mt-4">
+              <div className="flex items-center gap-2">
+                <SiGoogle className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-1">
+                  <span className="text-xl font-bold">4.9</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <span className="text-gray-500 text-sm font-medium">on Google</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <SiYelp className="w-6 h-6 text-[#c41200]" />
+                <div className="flex items-center gap-1">
+                  <span className="text-xl font-bold">4.9</span>
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                </div>
+                <span className="text-gray-500 text-sm font-medium">on Yelp</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
