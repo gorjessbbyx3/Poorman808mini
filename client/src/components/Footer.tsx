@@ -80,8 +80,10 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} Poorman808 Roadside. All rights reserved.</p>
-          <p className="text-gray-500">Powered by Edify, Limited</p>
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p>&copy; {new Date().getFullYear()} Poorman808 Roadside. All rights reserved.</p>
+            <p className="text-gray-500 text-xs">Powered by Edify, Limited</p>
+          </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
