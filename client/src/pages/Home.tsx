@@ -557,6 +557,7 @@ export default function Home() {
 
           <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
             <p>&copy; {new Date().getFullYear()} Poorman808 Roadside, LLC. All rights reserved.</p>
+            <p className="text-gray-600 text-xs mt-1">Powered by Edify, Limited • Media by Captured by Christian</p>
           </div>
         </div>
       </footer>
