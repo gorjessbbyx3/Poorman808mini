@@ -25,7 +25,8 @@ export default function Home() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    location: "",
+    email: "",
+    service: "",
     message: "",
   });
 
@@ -33,16 +34,32 @@ export default function Home() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Request Received!",
-      description: "We'll call you back within 5 minutes.",
-    });
-    
-    setFormData({ name: "", phone: "", location: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+      
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+      
+      setFormData({ name: "", phone: "", email: "", service: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const services = [
@@ -212,6 +229,7 @@ export default function Home() {
                   <Input
                     id="phone"
                     data-testid="input-phone"
+                    type="tel"
                     placeholder="(808) 555-1234"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -221,15 +239,37 @@ export default function Home() {
                 </div>
                 
                 <div>
-                  <Label htmlFor="location" className="text-gray-700">Location</Label>
+                  <Label htmlFor="email" className="text-gray-700">Email</Label>
                   <Input
-                    id="location"
-                    data-testid="input-location"
-                    placeholder="Where are you located?"
-                    value={formData.location}
-                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                    id="email"
+                    data-testid="input-email"
+                    type="email"
+                    placeholder="your@email.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    required
                     className="mt-1 bg-gray-50 border-gray-200"
                   />
+                </div>
+                
+                <div>
+                  <Label htmlFor="service" className="text-gray-700">Service Needed</Label>
+                  <select
+                    id="service"
+                    data-testid="select-service"
+                    value={formData.service}
+                    onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                    className="mt-1 w-full h-10 px-3 bg-gray-50 border border-gray-200 rounded-md text-gray-900"
+                  >
+                    <option value="">Select a service...</option>
+                    <option value="tow">Towing</option>
+                    <option value="jumpStart">Jump Start</option>
+                    <option value="lockout">Lockout Service</option>
+                    <option value="tireChange">Tire Change</option>
+                    <option value="fuelDelivery">Fuel Delivery</option>
+                    <option value="winchOut">Winch Out</option>
+                    <option value="other">Other</option>
+                  </select>
                 </div>
                 
                 <div>

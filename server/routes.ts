@@ -4,6 +4,9 @@ import { storage } from "./storage";
 import { insertBookingSchema, updateBookingStatusSchema, insertMembershipInquirySchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 import { crmClient, mapCRMStatusToUI, mapUIStatusToCRM } from "./lib/crmClient";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function registerRoutes(
   httpServer: Server,
@@ -354,6 +357,60 @@ export async function registerRoutes(
     } catch (error) {
       console.error("Error fetching fleet:", error);
       res.status(500).json({ error: "Failed to fetch fleet" });
+    }
+  });
+
+  // Send contact form inquiry email
+  app.post("/api/contact", async (req, res) => {
+    try {
+      const { name, phone, email, service, message } = req.body;
+      
+      if (!name || !phone || !email) {
+        return res.status(400).json({ error: "Name, phone, and email are required" });
+      }
+
+      const contactEmail = process.env.CONTACT_EMAIL;
+      if (!contactEmail) {
+        console.error("CONTACT_EMAIL not configured");
+        return res.status(500).json({ error: "Email service not configured" });
+      }
+
+      const serviceNames: Record<string, string> = {
+        tow: "Towing",
+        jumpStart: "Jump Start",
+        lockout: "Lockout",
+        tireChange: "Tire Change",
+        fuelDelivery: "Fuel Delivery",
+        winchOut: "Winch Out",
+        other: "Other",
+      };
+
+      const { data, error } = await resend.emails.send({
+        from: "Poorman808 Website <noreply@poorman808roadside.com>",
+        to: contactEmail,
+        subject: `New Inquiry from ${name} - ${serviceNames[service] || service || "General"}`,
+        html: `
+          <h2>New Contact Form Submission</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Phone:</strong> <a href="tel:${phone}">${phone}</a></p>
+          <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+          <p><strong>Service Needed:</strong> ${serviceNames[service] || service || "Not specified"}</p>
+          <p><strong>Message:</strong></p>
+          <p>${message || "No message provided"}</p>
+          <hr>
+          <p style="color: #666; font-size: 12px;">This email was sent from the Poorman808 Roadside website contact form.</p>
+        `,
+      });
+
+      if (error) {
+        console.error("Resend error:", error);
+        return res.status(500).json({ error: "Failed to send email" });
+      }
+
+      res.json({ success: true, messageId: data?.id });
+    } catch (error) {
+      console.error("Error sending contact email:", error);
+      res.status(500).json({ error: "Failed to send email" });
     }
   });
 
