@@ -14,7 +14,7 @@ export default function Footer() {
               <img src={logo} alt="Poorman808" className="h-16 w-auto object-contain" />
             </a>
             <p className="text-gray-400">
-              Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairly priced. We treat your car like our own.
+              ʻEwa Beach's most trusted towing and roadside assistance service. Proudly serving Kapolei, Waipahu, Pearl City, and all of West Oʻahu. Fast, friendly, and fairly priced.
             </p>
             <div className="flex gap-4">
                 {/* Social placeholders */}
@@ -70,7 +70,7 @@ export default function Footer() {
           {/* CTA Area */}
           <div className="bg-card p-6 rounded-xl border border-white/10">
             <h4 className="text-xl font-display text-white mb-2">NEED HELP NOW?</h4>
-            <p className="text-gray-400 text-sm mb-4">Fastest response times in Ewa Beach.</p>
+            <p className="text-gray-400 text-sm mb-4">Fastest response times in ʻEwa Beach, Kapolei & West Oʻahu.</p>
             <Button asChild className="w-full bg-primary text-black font-display text-lg uppercase h-12">
               <a href="tel:8088920158">
                 <Phone className="w-4 h-4 mr-2" /> Call Dispatch

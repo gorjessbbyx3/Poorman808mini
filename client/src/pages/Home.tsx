@@ -150,7 +150,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 max-w-lg" data-testid="text-hero-subtitle">
-                Fast, reliable, and affordable roadside assistance across Oahu. Locally owned and operated with true Aloha spirit.
+                Fast, reliable, and affordable roadside assistance serving ʻEwa Beach, Kapolei, Waipahu, Pearl City, and all of West Oʻahu. Locally owned and operated with true Aloha spirit.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -166,7 +166,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 {[
                   { icon: Clock, text: "24/7 Service" },
-                  { icon: MapPin, text: "Island Wide" },
+                  { icon: MapPin, text: "All Oʻahu" },
                   { icon: ShieldCheck, text: "Licensed & Insured" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white">
@@ -268,20 +268,20 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6" data-testid="text-about-title">
-              Oahu's Trusted Roadside Experts
+              Oʻahu's Trusted Roadside Experts
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              <strong>Poorman808 Roadside</strong> has proudly served Hawaii since 2021, providing fast, affordable, and reliable roadside assistance with true Aloha. Our mission is simple: get you back on the road quickly and safely.
+              <strong>Poorman808 Roadside</strong> has proudly served ʻEwa Beach, Kapolei, Waipahu, Pearl City, and all of West Oʻahu since 2021. We provide fast, affordable, and reliable roadside assistance with true Aloha. Our mission is simple: get you back on the road quickly and safely.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We specialize in <strong>emergency towing, jump starts, lockouts, tire changes, fuel delivery, and winch-outs</strong>. Whether you're stranded on the H1 at midnight or locked out at the beach, our team ensures a stress-free, professional experience.
+              We specialize in <strong>emergency towing, jump starts, lockouts, tire changes, fuel delivery, and winch-outs</strong> across Oʻahu. Whether you're stranded on H1 near Pearl City, stuck in Kapolei, or locked out in ʻEwa Beach, our team ensures a stress-free, professional experience.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
               {[
-                { title: "Fast Response", desc: "Average arrival time under 30 minutes" },
-                { title: "Fair Pricing", desc: "Honest quotes with no hidden fees" },
-                { title: "Local & Trusted", desc: "Over 20 years combined experience" },
+                { title: "Fast Response", desc: "Average arrival time under 30 minutes anywhere in West Oʻahu" },
+                { title: "Fair Pricing", desc: "Honest quotes with no hidden fees for ʻEwa Beach & beyond" },
+                { title: "Local & Trusted", desc: "Born and raised in ʻEwa Beach with 20+ years experience" },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 p-6 rounded-xl">
                   <CheckCircle className="w-10 h-10 text-primary mx-auto mb-4" />
@@ -323,7 +323,7 @@ export default function Home() {
               OUR SERVICES
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              From emergency towing to roadside repairs, we've got you covered 24/7.
+              From emergency towing to roadside repairs in ʻEwa Beach, Kapolei, Waipahu, Pearl City, and across Oʻahu — we've got you covered 24/7.
             </p>
           </div>
 
@@ -357,9 +357,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4" data-testid="text-gallery-title">
-              OUR WORK
+              OUR WORK ACROSS OʻAHU
             </h2>
-            <p className="text-xl text-gray-600">From everyday tows to tough rescues</p>
+            <p className="text-xl text-gray-600">From everyday tows in ʻEwa Beach to tough rescues in Kapolei and beyond</p>
           </div>
 
           <div className="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -488,7 +488,7 @@ export default function Home() {
               Ready to Get Back on the Road?
             </h2>
             <p className="text-xl text-gray-300 mb-10">
-              Say goodbye to stress! Whether it's a flat tire, dead battery, or you're locked out, we'll take care of it. Contact us today for fast, reliable service.
+              Stranded in ʻEwa Beach, Kapolei, Waipahu, or Pearl City? Whether it's a flat tire, dead battery, or you're locked out anywhere on Oʻahu, we'll take care of it. Contact us today for fast, reliable roadside assistance.
             </p>
             
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-white h-16 px-12 text-2xl font-display uppercase">
