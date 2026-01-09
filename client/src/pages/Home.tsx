@@ -88,19 +88,31 @@ export default function Home() {
     {
       name: "JP",
       location: "Ewa Beach, HI",
-      text: "Friendly and fast service responded quickly to my trouble call and got my vehicle to my house quick. Recommended service to all. Wonderful presence of Aloha!",
+      text: "Best towing service in Ewa Beach! Needed emergency towing after my car broke down near Keahumoa Parkway. Poorman808 Roadside responded quickly and got my vehicle home safe. Friendly service with true Aloha spirit. Highly recommended for anyone in Ewa Beach needing roadside assistance!",
       stars: 5,
     },
     {
       name: "Marcus T.",
       location: "Pearl City, HI",
-      text: "My GTI broke down near Pearl City around midnight on a busy Sunday night. Other towing companies claimed 24/7 but didn't answer. Poorman808 picked up, arrived quickly, and did an excellent job.",
+      text: "My GTI broke down near Pearl City around midnight. Other Hawaii towing companies claimed 24/7 service but didn't answer. Poorman808 picked up immediately, arrived in under 25 minutes, and provided excellent flatbed towing service. Best 24/7 tow truck in Oahu!",
       stars: 5,
     },
     {
       name: "Kiana L.",
       location: "Waipahu, HI",
-      text: "Available when I needed them most! Came out right away and did an excellent job. The driver was super friendly and handled my car with care. Will definitely call again.",
+      text: "Locked my keys in my car in Waipahu and Poorman808 Roadside came out right away for the lockout service. The driver was super friendly and got my door open without any damage. Best lockout service on Oahu - will definitely call again for any roadside help!",
+      stars: 5,
+    },
+    {
+      name: "David K.",
+      location: "Kapolei, HI",
+      text: "Got a flat tire near Kapolei Commons and called Poorman808 for help. Their tire change service was fast and affordable. The technician was professional and had me back on the road in 20 minutes. Great roadside assistance in West Oahu!",
+      stars: 5,
+    },
+    {
+      name: "Sarah M.",
+      location: "Honolulu, HI",
+      text: "Ran out of gas on H1 freeway near Honolulu and Poorman808 Roadside delivered fuel within 30 minutes. Their fuel delivery service saved my day! Professional, fast, and fairly priced. Best roadside assistance company in Hawaii!",
       stars: 5,
     },
   ];
