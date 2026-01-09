@@ -386,7 +386,7 @@ export async function registerRoutes(
       };
 
       const { data, error } = await resend.emails.send({
-        from: "Poorman808 Website <noreply@poorman808roadside.com>",
+        from: "Poorman808 Roadside <noreply@poormantowing.com>",
         to: contactEmail,
         subject: `New Inquiry from ${name} - ${serviceNames[service] || service || "General"}`,
         html: `
