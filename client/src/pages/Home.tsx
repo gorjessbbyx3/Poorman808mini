@@ -10,12 +10,14 @@ import { motion } from "framer-motion";
 import logo from "@assets/Remove_background_project_1766387130199.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1766402716631.mp4";
-import gallery1 from "@assets/image_1767035550400.jpeg";
-import gallery2 from "@assets/image_1767035572733.jpeg";
-import gallery3 from "@assets/image_1767035637719.jpeg";
-import gallery4 from "@assets/image_1767035675258.jpeg";
-import featuredImage from "@assets/image_1767035948720.jpeg";
-import truckImage from "@assets/image_1767036183064.jpeg";
+import placeholderImg from "@assets/C09F6537-317E-412F-9255-7C7473E013A3_1767939010215.png";
+
+const gallery1 = placeholderImg;
+const gallery2 = placeholderImg;
+const gallery3 = placeholderImg;
+const gallery4 = placeholderImg;
+const featuredImage = placeholderImg;
+const truckImage = placeholderImg;
 
 export default function Home() {
   const { toast } = useToast();
