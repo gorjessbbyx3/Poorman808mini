@@ -10,17 +10,19 @@ import { motion } from "framer-motion";
 import logo from "@assets/Remove_background_project_1766387130199.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1766402716631.mp4";
-import towTruckImg from "@assets/generated_images/dramatic_tow_truck_on_hawaii_coast.png";
-import tireTracksImg from "@assets/generated_images/dark_texture_of_tire_tracks_on_asphalt.png";
-import mapImg from "@assets/generated_images/dark_mode_navigation_map_ui.png";
-import topoMapImg from "@assets/generated_images/oahu_topographic_map_dark_texture.png";
+import truckPhoto1 from "@assets/IMG_5867_1769470651694.jpeg";
+import truckPhoto2 from "@assets/IMG_5870_1769470651694.jpeg";
+import truckPhoto3 from "@assets/IMG_5876_1769470651694.jpeg";
+import truckPhoto4 from "@assets/IMG_5878_1769470651694.jpeg";
+import truckPhoto5 from "@assets/IMG_5869_1769470651694.jpeg";
+import truckPhoto6 from "@assets/IMG_5868_1769470651694.jpeg";
 
-const gallery1 = towTruckImg;
-const gallery2 = tireTracksImg;
-const gallery3 = mapImg;
-const gallery4 = topoMapImg;
-const featuredImage = towTruckImg;
-const truckImage = towTruckImg;
+const gallery1 = truckPhoto1;
+const gallery2 = truckPhoto2;
+const gallery3 = truckPhoto3;
+const gallery4 = truckPhoto4;
+const featuredImage = truckPhoto5;
+const truckImage = truckPhoto6;
 
 export default function Home() {
   const { toast } = useToast();
