@@ -164,7 +164,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman808 Roadside - 24/7 Towing Service in Ewa Beach Hawaii" className="h-20 w-auto mb-6" data-testid="img-logo" />
+              <img src={logo} alt="Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman808 Roadside - Call (808) 892-0158" className="h-20 w-auto mb-6" data-testid="img-logo" />
               
               <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
                 <span className="w-2 h-2 bg-white rounded-full" />
@@ -357,7 +357,9 @@ export default function Home() {
             >
               <img 
                 src={truckImage} 
-                alt="Poorman808 Roadside flatbed tow truck"
+                alt="Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency service in Honolulu Oahu Hawaii"
+                title="Poorman808 Tow Truck - Professional Flatbed Towing Service Hawaii"
+                loading="lazy"
                 className="w-full h-auto object-cover"
                 data-testid="img-truck"
               />
@@ -414,7 +416,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {[gallery1, gallery2, gallery3, gallery4].map((img, i) => (
+            {[
+              { img: gallery1, alt: "Poorman808 flatbed tow truck in Ewa Beach Hawaii with palm trees - 24/7 towing service Oahu" },
+              { img: gallery2, alt: "Poorman808 tow truck hauling red pickup truck near H1 freeway Honolulu - emergency towing Hawaii" },
+              { img: gallery3, alt: "Poorman808 black flatbed tow truck with Toyota Sienna - professional towing service West Oahu" },
+              { img: gallery4, alt: "Poorman808 heavy duty tow truck transporting shipping container in Kapolei Hawaii" },
+            ].map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -425,8 +432,10 @@ export default function Home() {
                 data-testid={`gallery-image-${i}`}
               >
                 <img 
-                  src={img} 
-                  alt={`Poorman808 Roadside work photo ${i + 1}`}
+                  src={item.img} 
+                  alt={item.alt}
+                  title={item.alt}
+                  loading="lazy"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
@@ -564,7 +573,9 @@ export default function Home() {
             >
               <img 
                 src={featuredImage} 
-                alt="Vintage camper being towed by Poorman808 Roadside"
+                alt="Poorman808 Roadside tow truck providing 24/7 emergency towing service at night in Ewa Beach Hawaii"
+                title="24/7 Emergency Towing Service - Poorman808 Roadside Ewa Beach Oahu"
+                loading="lazy"
                 className="w-full h-auto object-cover"
                 data-testid="img-featured"
               />
