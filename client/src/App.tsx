@@ -6,6 +6,7 @@ import { Switch, Route } from "wouter";
 import Home from "@/pages/Home";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
+import CookieConsent from "@/components/CookieConsent";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/terms" component={TermsOfService} />
           <Route component={Home} />
         </Switch>
+        <CookieConsent />
       </TooltipProvider>
     </QueryClientProvider>
   );
