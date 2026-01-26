@@ -31,14 +31,28 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://poormantowing.com",
+      "@type": ["LocalBusiness", "AutoRepair", "EmergencyService"],
+      "@id": "https://poormantowing.com/#organization",
       "name": "Poorman808 Roadside LLC",
-      "image": "/opengraph.jpg",
-      "description": "Fast, reliable, and affordable 24/7 towing and roadside assistance in Ewa Beach and all of Oahu, Hawaii. Services include emergency towing, jump starts, lockouts, tire changes, fuel delivery, and winch-outs.",
+      "alternateName": ["Poorman808", "Poorman 808 Towing", "Poorman808 Towing"],
+      "legalName": "Poorman808 Roadside LLC",
+      "image": [
+        "https://poormantowing.com/opengraph.jpg"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://poormantowing.com/logo.png",
+        "width": 300,
+        "height": 100
+      },
+      "description": "Poorman808 Roadside LLC provides fast, reliable, and affordable 24/7 towing and roadside assistance in Ewa Beach, Kapolei, Waipahu, Pearl City, Honolulu and all of Oahu, Hawaii. Services include emergency towing, jump starts, lockouts, tire changes, fuel delivery, and winch-outs.",
+      "slogan": "Stuck on the road? We got you.",
       "url": "https://poormantowing.com",
       "telephone": "+1-808-892-0158",
       "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Venmo", "Zelle"],
+      "isAccessibleForFree": false,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "91-1159 Keahumoa Pkwy",
@@ -52,42 +66,309 @@
         "latitude": 21.3156,
         "longitude": -158.0072
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
+      "hasMap": "https://maps.google.com/?q=Poorman808+Roadside+Ewa+Beach+HI",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "specialOpeningHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "validFrom": "2026-01-01",
+          "validThrough": "2026-12-31",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59",
+          "description": "Open 24/7 including all holidays"
+        }
+      ],
       "areaServed": [
-        {"@type": "City", "name": "Ewa Beach", "containedInPlace": {"@type": "State", "name": "Hawaii"}},
+        {"@type": "City", "name": "Ewa Beach", "containedInPlace": {"@type": "State", "name": "Hawaii", "address": {"@type": "PostalAddress", "addressCountry": "US"}}},
         {"@type": "City", "name": "Pearl City", "containedInPlace": {"@type": "State", "name": "Hawaii"}},
         {"@type": "City", "name": "Waipahu", "containedInPlace": {"@type": "State", "name": "Hawaii"}},
         {"@type": "City", "name": "Kapolei", "containedInPlace": {"@type": "State", "name": "Hawaii"}},
         {"@type": "City", "name": "Honolulu", "containedInPlace": {"@type": "State", "name": "Hawaii"}},
-        {"@type": "Place", "name": "Oahu", "containedInPlace": {"@type": "State", "name": "Hawaii"}}
+        {"@type": "AdministrativeArea", "name": "West Oahu"},
+        {"@type": "Place", "name": "Oahu Island", "containedInPlace": {"@type": "State", "name": "Hawaii"}}
       ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.3156,
+          "longitude": -158.0072
+        },
+        "geoRadius": "50000"
+      },
       "sameAs": [
         "https://www.facebook.com/p/Poorman808-Roadside-LLC-100076455785885/",
-        "https://www.yelp.com/biz/poorman808-roadside-ewa-beach"
+        "https://www.yelp.com/biz/poorman808-roadside-ewa-beach",
+        "https://www.google.com/search?q=Poorman808+Roadside+Ewa+Beach"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-808-892-0158",
+          "contactType": "customer service",
+          "areaServed": "US-HI",
+          "availableLanguage": ["English"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-808-892-0158",
+          "contactType": "emergency",
+          "areaServed": "US-HI",
+          "availableLanguage": ["English"]
+        }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "50",
-        "bestRating": "5"
+        "bestRating": "5",
+        "worstRating": "1"
       },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "JP"},
+          "reviewBody": "Best towing service in Ewa Beach! Needed emergency towing after my car broke down near Keahumoa Parkway. Poorman808 Roadside responded quickly and got my vehicle home safe.",
+          "datePublished": "2025-12-15"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "Marcus T."},
+          "reviewBody": "My GTI broke down near Pearl City around midnight. Other Hawaii towing companies claimed 24/7 service but didn't answer. Poorman808 picked up immediately, arrived in under 25 minutes.",
+          "datePublished": "2025-11-20"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "Kiana L."},
+          "reviewBody": "Locked my keys in my car in Waipahu and Poorman808 Roadside came out right away for the lockout service. The driver was super friendly and got my door open without any damage.",
+          "datePublished": "2025-10-08"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "David K."},
+          "reviewBody": "Got a flat tire near Kapolei Commons and called Poorman808 for help. Their tire change service was fast and affordable. The technician was professional and had me back on the road in 20 minutes.",
+          "datePublished": "2025-09-12"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "author": {"@type": "Person", "name": "Sarah M."},
+          "reviewBody": "Ran out of gas on H1 freeway near Honolulu and Poorman808 Roadside delivered fuel within 30 minutes. Their fuel delivery service saved my day!",
+          "datePublished": "2025-08-25"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Roadside Services",
+        "name": "Roadside Assistance Services",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Towing", "description": "24/7 flatbed and wheel-lift towing for cars, trucks, and motorcycles"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jump Starts", "description": "Battery jump start service to get you back on the road"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lockout Service", "description": "Car lockout assistance without damage to your vehicle"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tire Change", "description": "Flat tire repair and spare tire installation"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fuel Delivery", "description": "Emergency fuel delivery when you run out of gas"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Winch Out", "description": "Vehicle recovery from mud, sand, or ditches"}}
+          {
+            "@type": "Offer",
+            "name": "Emergency Towing Service",
+            "description": "24/7 flatbed and wheel-lift towing for cars, trucks, and motorcycles in Ewa Beach and Oahu",
+            "price": "80.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "80.00",
+              "priceCurrency": "USD",
+              "unitText": "base rate plus $4 per mile"
+            },
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Towing",
+              "description": "24/7 emergency flatbed and wheel-lift towing for cars, trucks, and motorcycles",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "areaServed": {"@type": "Place", "name": "Oahu, Hawaii"},
+              "serviceType": "Towing Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Jump Start Service",
+            "description": "Dead battery jump start service to get you back on the road quickly",
+            "price": "45.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Jump Starts",
+              "description": "Battery jump start service for dead car batteries",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "serviceType": "Roadside Assistance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Lockout Service",
+            "description": "Car lockout assistance without damage to your vehicle",
+            "price": "55.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lockout Service",
+              "description": "Professional car lockout assistance using specialized tools",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "serviceType": "Locksmith Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Tire Change Service",
+            "description": "Flat tire repair and spare tire installation",
+            "price": "50.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tire Change",
+              "description": "Flat tire assistance including spare tire installation",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "serviceType": "Roadside Assistance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Fuel Delivery Service",
+            "description": "Emergency fuel delivery when you run out of gas",
+            "price": "60.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fuel Delivery",
+              "description": "Emergency gasoline delivery to stranded vehicles",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "serviceType": "Fuel Delivery"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Winch Out Service",
+            "description": "Vehicle recovery from mud, sand, ditches, or off-road situations",
+            "price": "95.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Winch Out",
+              "description": "Heavy-duty vehicle recovery and extraction service",
+              "provider": {"@id": "https://poormantowing.com/#organization"},
+              "serviceType": "Vehicle Recovery"
+            }
+          }
         ]
+      },
+      "knowsAbout": [
+        "Towing",
+        "Roadside Assistance",
+        "Jump Start Service",
+        "Lockout Service",
+        "Tire Change",
+        "Fuel Delivery",
+        "Winch Out",
+        "Vehicle Recovery",
+        "Emergency Roadside Service",
+        "Flatbed Towing",
+        "Wheel Lift Towing"
+      ],
+      "keywords": "towing, roadside assistance, Ewa Beach, Oahu, Hawaii, 24/7 towing, jump start, lockout, tire change, fuel delivery, winch out, emergency towing, Pearl City, Waipahu, Kapolei, Honolulu"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas do you serve for towing in Hawaii?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Poorman808 Roadside serves Ewa Beach, Kapolei, Waipahu, Pearl City, Honolulu, and all of Oahu, Hawaii. Our average response time in West Oahu is 15-30 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you available 24/7 for emergency towing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Poorman808 Roadside provides 24/7 emergency towing and roadside assistance services, including holidays. Call us anytime at (808) 892-0158."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does towing cost in Ewa Beach?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our towing service starts at $80 plus $4 per mile. Other services include jump starts from $45, lockout service from $55, tire changes from $50, fuel delivery from $60, and winch-outs from $95."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of vehicles do you tow?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We tow cars, trucks, SUVs, motorcycles, and most passenger vehicles using flatbed and wheel-lift equipment. Contact us for specific vehicle requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept cash, all major credit cards, debit cards, Venmo, and Zelle for your convenience."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Poorman808 Roadside",
+      "url": "https://poormantowing.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://poormantowing.com/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://poormantowing.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://poormantowing.com/services"},
+        {"@type": "ListItem", "position": 3, "name": "Book Now", "item": "https://poormantowing.com/book"},
+        {"@type": "ListItem", "position": 4, "name": "Track Service", "item": "https://poormantowing.com/track"},
+        {"@type": "ListItem", "position": 5, "name": "Membership", "item": "https://poormantowing.com/membership"}
+      ]
     }
     </script>
     
