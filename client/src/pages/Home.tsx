@@ -10,14 +10,17 @@ import { motion } from "framer-motion";
 import logo from "@assets/Remove_background_project_1766387130199.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1766402716631.mp4";
-import placeholderImg from "@assets/C09F6537-317E-412F-9255-7C7473E013A3_1767939010215.png";
+import towTruckImg from "@assets/generated_images/dramatic_tow_truck_on_hawaii_coast.png";
+import tireTracksImg from "@assets/generated_images/dark_texture_of_tire_tracks_on_asphalt.png";
+import mapImg from "@assets/generated_images/dark_mode_navigation_map_ui.png";
+import topoMapImg from "@assets/generated_images/oahu_topographic_map_dark_texture.png";
 
-const gallery1 = placeholderImg;
-const gallery2 = placeholderImg;
-const gallery3 = placeholderImg;
-const gallery4 = placeholderImg;
-const featuredImage = placeholderImg;
-const truckImage = placeholderImg;
+const gallery1 = towTruckImg;
+const gallery2 = tireTracksImg;
+const gallery3 = mapImg;
+const gallery4 = topoMapImg;
+const featuredImage = towTruckImg;
+const truckImage = towTruckImg;
 
 export default function Home() {
   const { toast } = useToast();

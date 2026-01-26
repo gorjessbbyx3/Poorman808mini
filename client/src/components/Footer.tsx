@@ -85,8 +85,8 @@ export default function Footer() {
             <p className="text-gray-500 text-xs">Powered by Edify, Limited • Media by Captured by Christian</p>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
