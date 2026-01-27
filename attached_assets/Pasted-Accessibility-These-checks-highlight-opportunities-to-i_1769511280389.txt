@@ -1,0 +1,54 @@
+Accessibility
+These checks highlight opportunities to improve the accessibility of your web app. Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so manual testing is also encouraged.
+BEST PRACTICES
+[user-scalable="no"] is used in the <meta name="viewport"> element or the [maximum-scale] attribute is less than 5.
+Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. Learn more about the viewport meta tag.
+Failing Elements
+head > meta
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+These items highlight common accessibility best practices.
+CONTRAST
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+CALL NOW: (808) 892-0158
+<a href="tel:8088920158" data-testid="button-call-hero" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mediu…">
+Request Callback
+<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap transition…" type="submit" data-testid="button-submit">
+CUSTOMER REVIEWS
+<span class="font-bold uppercase tracking-wider text-sm">
+CUSTOMER REVIEWS
+<div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounde…">
+CUSTOMER REVIEWS WHAT OUR CLIENTS SAY 4.9 on Google 4.9 on Yelp "Best towing s…
+<section class="py-12 bg-gray-50">
+(808) 892-0158
+<a href="tel:8088920158" data-testid="button-call-cta" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mediu…">
+© 2026 Poorman808 Roadside, LLC. All rights reserved.
+<p>
+Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairl…
+<footer class="py-12 bg-gray-950 text-white">
+Powered by Edify, Limited • Media by Captured by Christian
+<p class="text-gray-600 text-xs mt-1">
+Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairl…
+<footer class="py-12 bg-gray-950 text-white">
+Accept
+<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-mediu…" data-testid="button-accept-cookies">
+Links rely on color to be distinguishable.
+Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. Learn how to make links distinguishable.
+Failing Elements
+Privacy Policy
+<a href="/privacy" class="text-primary hover:underline">
+We use cookies to improve your experience. By continuing, you agree to our Priv…
+<p class="text-sm text-gray-300 text-center sm:text-left">
+These are opportunities to improve the legibility of your content.
+NAMES AND LABELS
+Links do not have a discernible name
+Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. Learn how to make links accessible.
+Failing Elements
+div.grid > div > div.flex > a.w-10
+<a href="https://www.facebook.com/p/Poorman808-Roadside-LLC-100076455785885/" target="_blank" rel="noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-[#1877F2] rounded-full flex items-center ju…" data-testid="link-facebook">
+div.grid > div > div.flex > a.w-10
+<a href="https://www.yelp.com/biz/poorman808-roadside-ewa-beach" target="_blank" rel="noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-[#FF1A1A] rounded-full flex items-center ju…" data-testid="link-yelp">
+div.grid > div > div.flex > a.w-10
+<a href="https://www.google.com/search?q=Poorman808+Roadside+Ewa+Beach" target="_blank" rel="noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-[#4285F4] rounded-full flex items-center ju…" data-testid="link-google">
+These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.

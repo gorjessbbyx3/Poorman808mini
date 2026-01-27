@@ -27,16 +27,16 @@ export default function CookieConsent() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gray-900 border-t border-gray-700 shadow-lg" data-testid="cookie-banner">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-300 text-center sm:text-left">
+        <p className="text-sm text-white text-center sm:text-left">
           We use cookies to improve your experience. By continuing, you agree to our{" "}
-          <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a>.
+          <a href="/privacy" className="text-yellow-400 hover:underline font-medium">Privacy Policy</a>.
         </p>
         <div className="flex items-center gap-2">
           <Button
             size="sm"
             variant="outline"
             onClick={declineCookies}
-            className="text-gray-300 border-gray-600 hover:bg-gray-800"
+            className="text-white border-gray-500 hover:bg-gray-700"
             data-testid="button-decline-cookies"
           >
             Decline
@@ -44,7 +44,7 @@ export default function CookieConsent() {
           <Button
             size="sm"
             onClick={acceptCookies}
-            className="bg-primary text-white hover:bg-primary/90"
+            className="bg-yellow-500 text-black font-bold hover:bg-yellow-400"
             data-testid="button-accept-cookies"
           >
             Accept

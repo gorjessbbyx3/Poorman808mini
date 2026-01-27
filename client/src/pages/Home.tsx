@@ -452,8 +452,8 @@ export default function Home() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
-              <SiGoogle className="w-5 h-5" />
+            <div className="inline-flex items-center gap-2 bg-gray-900 text-white px-4 py-2 rounded-full mb-6">
+              <SiGoogle className="w-5 h-5 text-primary" />
               <span className="font-bold uppercase tracking-wider text-sm">Customer Reviews</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900" data-testid="text-reviews-title">
@@ -603,28 +603,31 @@ export default function Home() {
                   href="https://www.facebook.com/p/Poorman808-Roadside-LLC-100076455785885/" 
                   target="_blank" 
                   rel="noreferrer"
+                  aria-label="Follow us on Facebook"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#1877F2] rounded-full flex items-center justify-center transition-colors"
                   data-testid="link-facebook"
                 >
-                  <SiFacebook className="w-5 h-5" />
+                  <SiFacebook className="w-5 h-5" aria-hidden="true" />
                 </a>
                 <a 
                   href="https://www.yelp.com/biz/poorman808-roadside-ewa-beach" 
                   target="_blank" 
                   rel="noreferrer"
+                  aria-label="Read our Yelp reviews"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#FF1A1A] rounded-full flex items-center justify-center transition-colors"
                   data-testid="link-yelp"
                 >
-                  <SiYelp className="w-5 h-5" />
+                  <SiYelp className="w-5 h-5" aria-hidden="true" />
                 </a>
                 <a 
                   href="https://www.google.com/search?q=Poorman808+Roadside+Ewa+Beach" 
                   target="_blank" 
                   rel="noreferrer"
+                  aria-label="Find us on Google"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#4285F4] rounded-full flex items-center justify-center transition-colors"
                   data-testid="link-google"
                 >
-                  <SiGoogle className="w-5 h-5" />
+                  <SiGoogle className="w-5 h-5" aria-hidden="true" />
                 </a>
               </div>
             </div>
@@ -661,9 +664,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+          <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Poorman Roadside808, LLC. All rights reserved.</p>
-            <p className="text-gray-600 text-xs mt-1">Powered by Edify, Limited • Media by Captured by Christian</p>
+            <p className="text-gray-400 text-xs mt-1">Powered by Edify, Limited • Media by Captured by Christian</p>
           </div>
         </div>
       </footer>
