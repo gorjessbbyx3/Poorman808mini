@@ -5,7 +5,7 @@ POORMAN808 ROADSIDE WEBSITE - PROJECT SCOPE & TECHNICAL DOCUMENTATION
 PROJECT OVERVIEW
 --------------------------------------------------------------------------------
 Website: poormantowing.com
-Business: Poorman808 Roadside LLC
+Business: Poorman Roadside808 LLC
 Service Area: Ewa Beach, Kapolei, Waipahu, Pearl City, West Oahu, Hawaii
 Purpose: 24/7 Towing and Roadside Assistance Service Website
 

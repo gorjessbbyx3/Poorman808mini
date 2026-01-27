@@ -29,14 +29,14 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
               <p>
-                By using the services of Poorman808 Roadside LLC ("Company," "we," "our"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                By using the services of Poorman Roadside808 LLC ("Company," "we," "our"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Services Provided</h2>
               <p>
-                Poorman808 Roadside LLC provides towing and roadside assistance services including but not limited to:
+                Poorman Roadside808 LLC provides towing and roadside assistance services including but not limited to:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Emergency towing (flatbed and wheel-lift)</li>
@@ -81,7 +81,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Liability Limitations</h2>
               <p>
-                While we take every precaution to protect your vehicle, Poorman808 Roadside LLC is not liable for:
+                While we take every precaution to protect your vehicle, Poorman Roadside808 LLC is not liable for:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Pre-existing damage to your vehicle</li>
@@ -128,7 +128,7 @@ export default function TermsOfService() {
                 For questions about these Terms of Service, please contact us:
               </p>
               <p className="mt-2">
-                <strong>Poorman808 Roadside LLC</strong><br />
+                <strong>Poorman Roadside808 LLC</strong><br />
                 91-1159 Keahumoa Pkwy<br />
                 ʻEwa Beach, HI 96706<br />
                 Phone: <a href="tel:8088920158" className="text-primary hover:underline">(808) 892-0158</a>

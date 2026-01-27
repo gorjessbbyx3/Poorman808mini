@@ -110,7 +110,7 @@ export default function Home() {
     {
       name: "JP",
       location: "Ewa Beach, HI",
-      text: "Best towing service in Ewa Beach! Needed emergency towing after my car broke down near Keahumoa Parkway. Poorman808 Roadside responded quickly and got my vehicle home safe. Friendly service with true Aloha spirit. Highly recommended for anyone in Ewa Beach needing roadside assistance!",
+      text: "Best towing service in Ewa Beach! Needed emergency towing after my car broke down near Keahumoa Parkway. Poorman Roadside808 responded quickly and got my vehicle home safe. Friendly service with true Aloha spirit. Highly recommended for anyone in Ewa Beach needing roadside assistance!",
       stars: 5,
     },
     {
@@ -122,7 +122,7 @@ export default function Home() {
     {
       name: "Kiana L.",
       location: "Waipahu, HI",
-      text: "Locked my keys in my car in Waipahu and Poorman808 Roadside came out right away for the lockout service. The driver was super friendly and got my door open without any damage. Best lockout service on Oahu - will definitely call again for any roadside help!",
+      text: "Locked my keys in my car in Waipahu and Poorman Roadside808 came out right away for the lockout service. The driver was super friendly and got my door open without any damage. Best lockout service on Oahu - will definitely call again for any roadside help!",
       stars: 5,
     },
     {
@@ -134,7 +134,7 @@ export default function Home() {
     {
       name: "Sarah M.",
       location: "Honolulu, HI",
-      text: "Ran out of gas on H1 freeway near Honolulu and Poorman808 Roadside delivered fuel within 30 minutes. Their fuel delivery service saved my day! Professional, fast, and fairly priced. Best roadside assistance company in Hawaii!",
+      text: "Ran out of gas on H1 freeway near Honolulu and Poorman Roadside808 delivered fuel within 30 minutes. Their fuel delivery service saved my day! Professional, fast, and fairly priced. Best roadside assistance company in Hawaii!",
       stars: 5,
     },
   ];
@@ -164,7 +164,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman808 Roadside - Call (808) 892-0158" className="h-20 w-auto mb-6" data-testid="img-logo" />
+              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 - Call (808) 892-0158" className="h-20 w-auto mb-6" data-testid="img-logo" />
               
               <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
                 <span className="w-2 h-2 bg-white rounded-full" />
@@ -326,7 +326,7 @@ export default function Home() {
               Oʻahu's Trusted Roadside Experts
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              <strong>Poorman808 Roadside</strong> has proudly served ʻEwa Beach, Kapolei, Waipahu, Pearl City, and all of West Oʻahu since 2021. We provide fast, affordable, and reliable roadside assistance with true Aloha. Our mission is simple: get you back on the road quickly and safely.
+              <strong>Poorman Roadside808</strong> has proudly served ʻEwa Beach, Kapolei, Waipahu, Pearl City, and all of West Oʻahu since 2021. We provide fast, affordable, and reliable roadside assistance with true Aloha. Our mission is simple: get you back on the road quickly and safely.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               We specialize in <strong>emergency towing, jump starts, lockouts, tire changes, fuel delivery, and winch-outs</strong> across Oʻahu. Whether you're stranded on H1 near Pearl City, stuck in Kapolei, or locked out in ʻEwa Beach, our team ensures a stress-free, professional experience.
@@ -361,7 +361,7 @@ export default function Home() {
             >
               <img 
                 src={truckImage} 
-                alt="Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency service in Honolulu Oahu Hawaii"
+                alt="Poorman Roadside808 white flatbed tow truck ready for 24/7 emergency service in Honolulu Oahu Hawaii"
                 title="Poorman808 Tow Truck - Professional Flatbed Towing Service Hawaii"
                 loading="lazy"
                 className="w-full h-auto object-cover"
@@ -577,8 +577,8 @@ export default function Home() {
             >
               <img 
                 src={featuredImage} 
-                alt="Poorman808 Roadside tow truck providing 24/7 emergency towing service at night in Ewa Beach Hawaii"
-                title="24/7 Emergency Towing Service - Poorman808 Roadside Ewa Beach Oahu"
+                alt="Poorman Roadside808 tow truck providing 24/7 emergency towing service at night in Ewa Beach Hawaii"
+                title="24/7 Emergency Towing Service - Poorman Roadside808 Ewa Beach Oahu"
                 loading="lazy"
                 className="w-full h-auto object-cover"
                 data-testid="img-featured"
@@ -594,7 +594,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <img src={logo} alt="Poorman808 Roadside" className="h-16 w-auto mb-4" />
+              <img src={logo} alt="Poorman Roadside808" className="h-16 w-auto mb-4" />
               <p className="text-gray-400 mb-6">
                 Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairly priced.
               </p>
@@ -662,7 +662,7 @@ export default function Home() {
           </div>
 
           <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} Poorman808 Roadside, LLC. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Poorman Roadside808, LLC. All rights reserved.</p>
             <p className="text-gray-600 text-xs mt-1">Powered by Edify, Limited • Media by Captured by Christian</p>
           </div>
         </div>

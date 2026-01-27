@@ -45,7 +45,7 @@ export default function Navbar() {
           className="flex items-center gap-2"
           data-testid="link-logo"
         >
-          <img src={logo} alt="Poorman808" className="h-12 w-auto object-contain" />
+          <img src={logo} alt="Poorman Roadside808 LLC" className="h-12 w-auto object-contain" />
         </button>
 
         {/* Desktop Nav */}

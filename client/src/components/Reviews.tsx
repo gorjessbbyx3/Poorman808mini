@@ -12,7 +12,7 @@ export default function Reviews() {
     {
       name: "Marcus T.",
       location: "Pearl City, HI",
-      text: "My GTI broke down near Pearl City around midnight on a busy Sunday night. Other towing companies claimed 24/7 but didn't answer. Poorman808 picked up, arrived quickly, and did an excellent job. Truly reliable!",
+      text: "My GTI broke down near Pearl City around midnight on a busy Sunday night. Other towing companies claimed 24/7 but didn't answer. Poorman Roadside808 picked up, arrived quickly, and did an excellent job. Truly reliable!",
       stars: 5,
     },
     {
@@ -30,7 +30,7 @@ export default function Reviews() {
     {
       name: "Sarah M.",
       location: "Mililani, HI",
-      text: "Called at 2 AM with a flat tire on H1. They answered right away and the driver was there in 20 minutes. Professional service and fair pricing. Thank you Poorman808!",
+      text: "Called at 2 AM with a flat tire on H1. They answered right away and the driver was there in 20 minutes. Professional service and fair pricing. Thank you Poorman Roadside808!",
       stars: 5,
     },
     {
@@ -85,7 +85,7 @@ export default function Reviews() {
         
         <div className="mt-12 text-center flex flex-wrap justify-center gap-6">
             <a 
-                href="https://www.google.com/search?q=Poorman808+Roadside+Ewa+Beach+reviews" 
+                href="https://www.google.com/search?q=Poorman Roadside808+Roadside+Ewa+Beach+reviews" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors border-b border-transparent hover:border-primary pb-1 font-display tracking-wider uppercase"

@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>
               <p>
-                Poorman808 Roadside LLC ("we," "our," or "us") collects information you provide directly to us when you:
+                Poorman Roadside808 LLC ("we," "our," or "us") collects information you provide directly to us when you:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Request roadside assistance or towing services</li>
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
               <p className="mt-2">
-                <strong>Poorman808 Roadside LLC</strong><br />
+                <strong>Poorman Roadside808 LLC</strong><br />
                 91-1159 Keahumoa Pkwy<br />
                 ʻEwa Beach, HI 96706<br />
                 Phone: <a href="tel:8088920158" className="text-primary hover:underline">(808) 892-0158</a>

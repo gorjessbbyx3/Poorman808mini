@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <a href="/" className="block">
-              <img src={logo} alt="Poorman808 Roadside LLC - 24/7 Towing Service Ewa Beach Oahu Hawaii" title="Poorman808 Roadside - (808) 892-0158" className="h-16 w-auto object-contain" />
+              <img src={logo} alt="Poorman Roadside808 LLC - 24/7 Towing Service Ewa Beach Oahu Hawaii" title="Poorman Roadside808 - (808) 892-0158" className="h-16 w-auto object-contain" />
             </a>
             <p className="text-gray-400">
               ʻEwa Beach's most trusted towing and roadside assistance service. Proudly serving Kapolei, Waipahu, Pearl City, and all of West Oʻahu. Fast, friendly, and fairly priced.
@@ -81,7 +81,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
           <div className="flex flex-col items-center md:items-start gap-1">
-            <p>&copy; {new Date().getFullYear()} Poorman808 Roadside. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Poorman Roadside808. All rights reserved.</p>
             <p className="text-gray-500 text-xs">Powered by Edify, Limited • Media by Captured by Christian</p>
           </div>
           <div className="flex gap-6">

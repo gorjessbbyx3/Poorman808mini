@@ -1,8 +1,8 @@
-# Poorman808 Roadside - Replit Configuration
+# Poorman Roadside808 - Replit Configuration
 
 ## Overview
 
-This is a full-stack web application for **Poorman808 Roadside**, a towing and roadside assistance service based in Ewa Beach, Hawaii. The application allows customers to book towing services, track their service requests in real-time, and provides a dispatch interface for managing bookings. The platform includes membership plans, coupons, and integrates with an external CRM system for task management.
+This is a full-stack web application for **Poorman Roadside808**, a towing and roadside assistance service based in Ewa Beach, Hawaii. The application allows customers to book towing services, track their service requests in real-time, and provides a dispatch interface for managing bookings. The platform includes membership plans, coupons, and integrates with an external CRM system for task management.
 
 ## User Preferences
 
