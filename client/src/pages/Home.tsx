@@ -288,6 +288,10 @@ export default function Home() {
                     className="mt-1 bg-gray-50 border-gray-200 min-h-[100px]"
                   />
                 </div>
+
+                <p className="text-xs text-gray-500 text-center">
+                  By submitting, you agree to be contacted regarding your service request.
+                </p>
                 
                 <Button
                   type="submit"
