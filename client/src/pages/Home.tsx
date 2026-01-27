@@ -107,36 +107,44 @@ export default function Home() {
     },
   ];
 
+  const googleReviewsUrl = "https://www.google.com/search?q=Poorman808+Roadside+Ewa+Beach+reviews";
+  const yelpReviewsUrl = "https://www.yelp.com/biz/poorman808-roadside-ewa-beach";
+
   const reviews = [
     {
       name: "JP",
       location: "Ewa Beach, HI",
       text: "Best towing service in Ewa Beach! Needed emergency towing after my car broke down near Keahumoa Parkway. Poorman Roadside808 responded quickly and got my vehicle home safe. Friendly service with true Aloha spirit. Highly recommended for anyone in Ewa Beach needing roadside assistance!",
       stars: 5,
+      source: "google" as const,
     },
     {
       name: "Marcus T.",
       location: "Pearl City, HI",
       text: "My GTI broke down near Pearl City around midnight. Other Hawaii towing companies claimed 24/7 service but didn't answer. Poorman808 picked up immediately, arrived in under 25 minutes, and provided excellent flatbed towing service. Best 24/7 tow truck in Oahu!",
       stars: 5,
+      source: "yelp" as const,
     },
     {
       name: "Kiana L.",
       location: "Waipahu, HI",
       text: "Locked my keys in my car in Waipahu and Poorman Roadside808 came out right away for the lockout service. The driver was super friendly and got my door open without any damage. Best lockout service on Oahu - will definitely call again for any roadside help!",
       stars: 5,
+      source: "google" as const,
     },
     {
       name: "David K.",
       location: "Kapolei, HI",
       text: "Got a flat tire near Kapolei Commons and called Poorman808 for help. Their tire change service was fast and affordable. The technician was professional and had me back on the road in 20 minutes. Great roadside assistance in West Oahu!",
       stars: 5,
+      source: "yelp" as const,
     },
     {
       name: "Sarah M.",
       location: "Honolulu, HI",
       text: "Ran out of gas on H1 freeway near Honolulu and Poorman Roadside808 delivered fuel within 30 minutes. Their fuel delivery service saved my day! Professional, fast, and fairly priced. Best roadside assistance company in Hawaii!",
       stars: 5,
+      source: "google" as const,
     },
   ];
 
@@ -492,35 +500,49 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {reviews.map((review, i) => (
-              <motion.div
+              <a
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-gray-50 p-8 rounded-xl relative"
-                data-testid={`card-review-${i}`}
+                href={review.source === "google" ? googleReviewsUrl : yelpReviewsUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Read this review on ${review.source === "google" ? "Google" : "Yelp"}`}
+                className="block"
               >
-                <Quote className="absolute top-6 right-6 w-8 h-8 text-gray-200" />
-                
-                <div className="flex gap-1 mb-4">
-                  {[...Array(review.stars)].map((_, s) => (
-                    <Star key={s} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                
-                <p className="text-gray-700 text-lg mb-6 italic">"{review.text}"</p>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-white text-lg">
-                    {review.name.charAt(0)}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="bg-gray-50 p-8 rounded-xl relative hover:shadow-lg hover:bg-white transition-all cursor-pointer h-full"
+                  data-testid={`card-review-${i}`}
+                >
+                  <div className="absolute top-6 right-6 flex items-center gap-2">
+                    {review.source === "google" ? (
+                      <SiGoogle className="w-5 h-5 text-[#4285F4]" />
+                    ) : (
+                      <SiYelp className="w-5 h-5 text-[#c41200]" />
+                    )}
                   </div>
-                  <div>
-                    <div className="font-bold text-gray-900">{review.name}</div>
-                    <div className="text-sm text-gray-500">{review.location}</div>
+                  
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(review.stars)].map((_, s) => (
+                      <Star key={s} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
                   </div>
-                </div>
-              </motion.div>
+                  
+                  <p className="text-gray-700 text-lg mb-6 italic">"{review.text}"</p>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-white text-lg">
+                      {review.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold text-gray-900">{review.name}</div>
+                      <div className="text-sm text-gray-500">{review.location}</div>
+                    </div>
+                  </div>
+                </motion.div>
+              </a>
             ))}
           </div>
           
