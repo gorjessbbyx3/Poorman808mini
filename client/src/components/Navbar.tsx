@@ -3,7 +3,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-import logo from "@assets/Remove_background_project_1766387130199.png";
+import logo from "@assets/Untitled_1769513277709.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -7,9 +7,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
-import logo from "@assets/Remove_background_project_1766387130199.png";
+import logo from "@assets/Untitled_1769513277709.png";
+import logoIcon from "@assets/Untitled-3_1769513277709.png";
 // @ts-ignore
-import heroBg from "@assets/Untitled_1766402716631.mp4";
+import heroBg from "@assets/Untitled_1769513277708.mov";
 import truckPhoto1 from "@assets/IMG_5867_1769470651694.jpeg";
 import truckPhoto2 from "@assets/IMG_5870_1769470651694.jpeg";
 import truckPhoto3 from "@assets/IMG_5876_1769470651694.jpeg";
@@ -164,7 +165,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 - Call (808) 892-0158" width="243" height="140" className="h-20 w-auto mb-6" data-testid="img-logo" />
+              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 LLC - Call (808) 892-0158 for Towing Service" width="240" height="320" className="h-24 w-auto mb-6" data-testid="img-logo" />
               
               <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
                 <span className="w-2 h-2 bg-white rounded-full" />
@@ -598,7 +599,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <img src={logo} alt="Poorman Roadside808" width="195" height="112" className="h-16 w-auto mb-4" />
+              <img src={logo} alt="Poorman Roadside808 LLC - Towing Service Ewa Beach Hawaii" title="Poorman Roadside808 LLC" width="240" height="320" className="h-20 w-auto mb-4" />
               <p className="text-gray-400 mb-6">
                 Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairly priced.
               </p>
