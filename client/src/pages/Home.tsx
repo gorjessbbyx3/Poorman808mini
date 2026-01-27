@@ -164,7 +164,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 - Call (808) 892-0158" className="h-20 w-auto mb-6" data-testid="img-logo" />
+              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 - Call (808) 892-0158" width="243" height="140" className="h-20 w-auto mb-6" data-testid="img-logo" />
               
               <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
                 <span className="w-2 h-2 bg-white rounded-full" />
@@ -364,6 +364,8 @@ export default function Home() {
                 alt="Poorman Roadside808 white flatbed tow truck ready for 24/7 emergency service in Honolulu Oahu Hawaii"
                 title="Poorman808 Tow Truck - Professional Flatbed Towing Service Hawaii"
                 loading="lazy"
+                width="992"
+                height="744"
                 className="w-full h-auto object-cover"
                 data-testid="img-truck"
               />
@@ -580,6 +582,8 @@ export default function Home() {
                 alt="Poorman Roadside808 tow truck providing 24/7 emergency towing service at night in Ewa Beach Hawaii"
                 title="24/7 Emergency Towing Service - Poorman Roadside808 Ewa Beach Oahu"
                 loading="lazy"
+                width="992"
+                height="744"
                 className="w-full h-auto object-cover"
                 data-testid="img-featured"
               />
@@ -594,7 +598,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <img src={logo} alt="Poorman Roadside808" className="h-16 w-auto mb-4" />
+              <img src={logo} alt="Poorman Roadside808" width="195" height="112" className="h-16 w-auto mb-4" />
               <p className="text-gray-400 mb-6">
                 Ewa Beach's most trusted roadside assistance service. Fast, friendly, and fairly priced.
               </p>

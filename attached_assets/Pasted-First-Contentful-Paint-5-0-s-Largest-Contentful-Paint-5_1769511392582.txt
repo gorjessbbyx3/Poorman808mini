@@ -1,0 +1,157 @@
+First Contentful Paint
+5.0 s
+Largest Contentful Paint
+5.0 s
+Total Blocking Time
+0 ms
+Cumulative Layout Shift
+0.003
+Speed Index
+5.4 s
+Captured at Jan 27, 2026 at 12:49 AM HST
+Emulated Moto G Power with Lighthouse 13.0.1
+Single page session
+Initial page load
+Slow 4G throttling
+Using HeadlessChromium 137.0.7151.119 with lr
+View Treemap
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Screenshot
+Show audits relevant to:
+
+All
+
+FCP
+
+LCP
+
+TBT
+
+CLS
+INSIGHTS
+Render blocking requests Est savings of 1,530 ms
+Requests are blocking the page's initial render, which may delay LCP. Deferring or inlining can move these network requests out of the critical path.LCPFCPUnscored
+  Show 3rd-party resources (1)
+URL
+Transfer Size
+Duration
+poormantowing.com 1st Party
+102.7 KiB	1,830 ms
+/assets/index-K7-xMIgp.css(poormantowing.com)
+102.7 KiB
+1,830 ms
+Google Fonts Cdn 
+1.4 KiB	780 ms
+/css2?family=…(fonts.googleapis.com)
+1.4 KiB
+780 ms
+Network dependency tree
+Avoid chaining critical requests by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.LCPUnscored
+Maximum critical path latency: 1,364 ms
+Initial Navigation
+https://poormantowing.com - 177 ms, 20.37 KiB
+/css2?family=…(fonts.googleapis.com) - 185 ms, 1.43 KiB
+…v20/xn7gYHE41….woff2(fonts.gstatic.com) - 1,364 ms, 24.79 KiB
+…v23/LYjNdG7km….woff2(fonts.gstatic.com) - 1,364 ms, 15.69 KiB
+/assets/index-Bi16qfLn.js(poormantowing.com) - 343 ms, 474.43 KiB
+/assets/index-K7-xMIgp.css(poormantowing.com) - 302 ms, 102.72 KiB
+Preconnected origins
+preconnect hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.
+no origins were preconnected
+Preconnect candidates
+Add preconnect hints to your most important origins, but try to use no more than 4.
+No additional origins are good candidates for preconnecting
+Document request latency Est savings of 13 KiB
+Your first network request is the most important. Reduce its latency by avoiding redirects, ensuring a fast server response, and enabling text compression.LCPFCPUnscored
+Avoids redirects
+Server responds quickly (observed 2 ms)
+No compression applied
+Improve image delivery Est savings of 417 KiB
+Reducing the download time of images can improve the perceived load time of the page and LCP. Learn more about optimizing image sizeLCPFCPUnscored
+URL
+Resource Size
+Est Savings
+poormantowing.com 1st Party
+471.9 KiB	417.3 KiB
+Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oa…
+<img alt="Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Bea…" class="h-20 w-auto mb-6" data-testid="img-logo" src="/assets/Remove_background_project_1766387130199-H1KI5WWa.png">
+/assets/Remove_ba….png(poormantowing.com)
+362.9 KiB
+357.3 KiB
+Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.
+268.9 KiB
+This image file is larger than it needs to be (1000x577) for its displayed dimensions (243x140). Use responsive images to reduce the image download size.
+341.5 KiB
+Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency service in…
+<img alt="Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency servi…" loading="lazy" class="w-full h-auto object-cover" data-testid="img-truck" src="/assets/IMG_5868_1769470651694-hL9ZB9qO.jpeg">
+/assets/IMG_5868_….jpeg(poormantowing.com)
+109.0 KiB
+60.0 KiB
+This image file is larger than it needs to be (992x744) for its displayed dimensions (665x499). Use responsive images to reduce the image download size.
+60.0 KiB
+Layout shift culprits
+LCP breakdown
+3rd parties
+These insights are also available in the Chrome DevTools Performance Panel - record a trace to view more detailed information.
+DIAGNOSTICS
+Reduce unused JavaScript Est savings of 237 KiB
+Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. Learn how to reduce unused JavaScript.LCPFCPUnscored
+URL
+Transfer Size
+Est Savings
+poormantowing.com 1st Party
+473.9 KiB	237.5 KiB
+/assets/index-Bi16qfLn.js(poormantowing.com)
+473.9 KiB
+237.5 KiB
+Image elements do not have explicit width and height
+Set an explicit width and height on image elements to reduce layout shifts and improve CLS. Learn how to set image dimensionsCLSUnscored
+URL
+poormantowing.com 1st Party
+Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency service in…
+<img alt="Poorman808 Roadside white flatbed tow truck ready for 24/7 emergency servi…" loading="lazy" class="w-full h-auto object-cover" data-testid="img-truck" src="/assets/IMG_5868_1769470651694-hL9ZB9qO.jpeg">
+/assets/IMG_5868_….jpeg(poormantowing.com)
+Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oa…
+<img alt="Poorman808 Roadside LLC Logo - 24/7 Towing and Roadside Assistance Ewa Bea…" class="h-20 w-auto mb-6" data-testid="img-logo" src="/assets/Remove_background_project_1766387130199-H1KI5WWa.png">
+/assets/Remove_ba….png(poormantowing.com)
+Poorman808 Roadside
+<img alt="Poorman808 Roadside" class="h-16 w-auto mb-4" src="/assets/Remove_background_project_1766387130199-H1KI5WWa.png">
+/assets/Remove_ba….png(poormantowing.com)
+Unattributable
+Poorman808 Roadside tow truck providing 24/7 emergency towing service at night …
+<img alt="Poorman808 Roadside tow truck providing 24/7 emergency towing service at n…" loading="lazy" class="w-full h-auto object-cover" data-testid="img-featured" src="">
+Avoid enormous network payloads Total size was 11,546 KiB
+Large network payloads cost users real money and are highly correlated with long load times. Learn how to reduce payload sizes.Unscored
+  Show 3rd-party resources (3)
+URL
+Transfer Size
+poormantowing.com 1st Party
+11,503.8 KiB
+/assets/Untitled_….mp4(poormantowing.com)
+10,416.7 KiB
+/assets/index-Bi16qfLn.js(poormantowing.com)
+474.4 KiB
+/assets/Remove_ba….png(poormantowing.com)
+363.3 KiB
+/assets/IMG_5868_….jpeg(poormantowing.com)
+109.5 KiB
+/assets/index-K7-xMIgp.css(poormantowing.com)
+102.7 KiB
+https://poormantowing.com
+20.4 KiB
+/assets/Untitled_….mp4(poormantowing.com)
+16.7 KiB
+Google Fonts Cdn 
+41.9 KiB
+…v20/xn7gYHE41….woff2(fonts.gstatic.com)
+24.8 KiB
+…v23/LYjNdG7km….woff2(fonts.gstatic.com)
+15.7 KiB
+/css2?family=…(fonts.googleapis.com)
+1.4 KiB
