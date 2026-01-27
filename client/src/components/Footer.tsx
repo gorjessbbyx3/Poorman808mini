@@ -1,6 +1,6 @@
 import { Phone, MapPin, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@assets/Untitled_1769513277709.png";
+import logo from "@assets/Untitled_1769513560724.jpeg";
 
 export default function Footer() {
   return (

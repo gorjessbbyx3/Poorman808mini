@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
-import logo from "@assets/Untitled_1769513277709.png";
+import logo from "@assets/Untitled_1769513560724.jpeg";
 import logoIcon from "@assets/Untitled-3_1769513277709.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1769513277708.mov";
