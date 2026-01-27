@@ -1,0 +1,158 @@
+================================================================================
+POORMAN808 ROADSIDE WEBSITE - PROJECT SCOPE & TECHNICAL DOCUMENTATION
+================================================================================
+
+PROJECT OVERVIEW
+--------------------------------------------------------------------------------
+Website: poormantowing.com
+Business: Poorman808 Roadside LLC
+Service Area: Ewa Beach, Kapolei, Waipahu, Pearl City, West Oahu, Hawaii
+Purpose: 24/7 Towing and Roadside Assistance Service Website
+
+
+TECHNOLOGY STACK
+--------------------------------------------------------------------------------
+
+Frontend:
+- React 18 (JavaScript UI Library)
+- TypeScript (Type-safe JavaScript)
+- Vite (Build tool and development server)
+- Tailwind CSS v4 (Styling framework)
+- Framer Motion (Animations)
+- Wouter (Client-side routing)
+- TanStack React Query (Data fetching)
+- React Hook Form + Zod (Form handling and validation)
+- shadcn/ui + Radix UI (UI component library)
+- Lucide React (Icons)
+
+Backend:
+- Node.js (JavaScript runtime)
+- Express.js (Web server framework)
+- TypeScript (Type-safe JavaScript)
+
+Database:
+- PostgreSQL (Relational database via Neon)
+- Drizzle ORM (Database queries)
+
+Email Service:
+- Resend API (Transactional email delivery)
+
+Hosting:
+- Replit (Cloud hosting platform)
+- HTTPS/SSL included
+
+
+WEBSITE FEATURES
+--------------------------------------------------------------------------------
+
+Pages & Sections:
+- Homepage with hero section
+- Services section (6 services with pricing)
+- Photo gallery (6 real truck photos)
+- Customer reviews (5 testimonials)
+- Contact form with email delivery
+- About/Why Choose Us section
+- Service areas display
+- Privacy Policy page
+- Terms of Service page
+
+Interactive Features:
+- Click-to-call phone buttons throughout site
+- Contact form with validation
+- Cookie consent banner
+- Smooth scroll animations
+- Responsive mobile navigation
+- Image hover effects
+
+Services Displayed:
+1. Emergency Towing - Starting at $85
+2. Jump Starts - Starting at $55
+3. Lockout Service - Starting at $55
+4. Tire Changes - Starting at $65
+5. Fuel Delivery - Starting at $60
+6. Winch-Outs - Starting at $95
+
+
+SEARCH ENGINE OPTIMIZATION (SEO)
+--------------------------------------------------------------------------------
+
+On-Page SEO:
+- Meta title and description tags
+- SEO-optimized image alt text with location keywords
+- Image title attributes
+- Semantic HTML structure (H1, H2, H3 hierarchy)
+- Local keyword integration throughout content
+- Lazy loading for images
+
+Structured Data (Schema Markup):
+- LocalBusiness schema
+- AutoRepair schema
+- EmergencyService schema
+- 5 individual review schemas
+- FAQ schema
+- Breadcrumb schema
+- Service offerings with pricing
+- Payment methods accepted
+- Contact points
+
+Technical SEO:
+- sitemap.xml for search engine crawling
+- robots.txt for crawler instructions
+- Noscript fallback content for accessibility
+- Mobile-responsive design
+- Fast page load optimization
+
+
+DATA HANDLING & PRIVACY
+--------------------------------------------------------------------------------
+
+Contact Form:
+- Data sent directly via Resend email API
+- NO data stored in database
+- Email delivered to business inbox only
+
+Cookies:
+- Cookie consent banner implemented
+- User preference stored locally
+
+Privacy Compliance:
+- Privacy Policy page
+- Terms of Service page
+- GDPR-friendly contact form (no storage)
+
+
+SERVICE AREAS TARGETED
+--------------------------------------------------------------------------------
+- Ewa Beach, Hawaii
+- Kapolei, Hawaii
+- Waipahu, Hawaii
+- Pearl City, Hawaii
+- West Oahu
+- Honolulu (extended area)
+
+
+DELIVERABLES INCLUDED
+--------------------------------------------------------------------------------
+1. Fully responsive custom website
+2. 6 service sections with descriptions and pricing
+3. Photo gallery with 6 real truck images
+4. Contact form with email integration
+5. Privacy Policy page
+6. Terms of Service page
+7. Cookie consent system
+8. Local SEO optimization
+9. Structured data markup
+10. sitemap.xml and robots.txt
+11. Mobile-optimized design
+12. Click-to-call functionality
+
+
+CREDITS
+--------------------------------------------------------------------------------
+Powered by: Edify, Limited
+Media by: Captured by Christian
+
+
+================================================================================
+Document Generated: January 2026
+================================================================================
