@@ -7,8 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
-import logo from "@assets/Untitled_1769513560724.jpeg";
-import heroLogo from "@assets/FE53B7CF-1FC9-4281-A7A6-099A2A2FD76E_1769562834362.png";
+import logo from "@assets/6F0F8467-3489-4ACA-B20E-9ED6CAEEC4E7_1769579083284.png";
+import heroLogo from "@assets/6F0F8467-3489-4ACA-B20E-9ED6CAEEC4E7_1769579083284.png";
 import logoIcon from "@assets/Untitled-3_1769513277709.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1769513277708.mov";
