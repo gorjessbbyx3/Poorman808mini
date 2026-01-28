@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import logo from "@assets/Untitled_1769513560724.jpeg";
+import heroLogo from "@assets/FE53B7CF-1FC9-4281-A7A6-099A2A2FD76E_1769562834362.png";
 import logoIcon from "@assets/Untitled-3_1769513277709.png";
 // @ts-ignore
 import heroBg from "@assets/Untitled_1769513277708.mov";
@@ -173,7 +174,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <img src={logo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 LLC - Call (808) 892-0158 for Towing Service" width="240" height="320" className="h-24 w-auto mb-6" data-testid="img-logo" />
+              <img src={heroLogo} alt="Poorman Roadside808 LLC Logo - 24/7 Towing and Roadside Assistance Ewa Beach Oahu Hawaii" title="Poorman Roadside808 LLC - Call (808) 892-0158 for Towing Service" width="300" height="400" className="h-32 w-auto mb-6" data-testid="img-logo" />
               
               <div className="bg-red-600 text-white px-4 py-2 rounded-full inline-flex items-center gap-2 mb-4 animate-pulse">
                 <span className="w-2 h-2 bg-white rounded-full" />
